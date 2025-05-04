@@ -31,6 +31,4 @@ I have then developed the project using HTML, CSS and the Django framework. I ha
 # Video Demonstration
 A video demonstration of this project can be found here https://youtu.be/19l7IV4yuQE
 
-## Created by 
-Daniel Liles, 33673554
 
