@@ -1,0 +1,15 @@
+<title>Dans Dinnerz Home</title>
+{% extends 'recipies/base.html' %}
+{% block content %}
+        <h1>Welcome to Dan's Dinnerz, I hope you enjoy my fantastic recipes!</h1><br>
+       <div class="columns is-multiline">{% for recipie in recipies %}
+        <div class="column is-one-third">
+            <h2>{{recipie.title}}</h2>
+            <p>Recipie Author: {{recipie.author}}</p> <br>
+            <p>Ingredients: <br>{{recipie.ingredients |linebreaksbr}}</p> <br>
+            <p>Steps: <br> {{recipie.steps |linebreaksbr}}</p> <br>
+            <p>Last modified: {{recipie.modified_at |date:"F d, Y"}}</p>
+        </div>
+        {% endfor%}
+       </div>
+{% endblock content%}

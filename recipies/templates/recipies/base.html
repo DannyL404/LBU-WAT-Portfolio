@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}Dan's Dinnerz{% endblock title %}</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+<body>
+
+<div class="columns">
+<nav class="navbar is-primary column is-narrow" role="navigation" aria-label="site navigation">
+    <div id="navbarmain" class="navbar-menu">
+        <div class="navbar-end is-flex-direction-column">
+            <a class="navbar-item is-block" href="/">Home</a>
+            <a class="navbar-item is-block" href="/about">About</a>
+            <a class="navbar-item is-block" href="/contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="column">
+<div class="hero is-primary">
+    <div class="hero-body">
+        <img alt="Dan's Dinnerz Logo" width="100px" src="{% static 'img/logo.png'%}">
+        <h1 class="title" color="black">Dan's Dinnerz</h1>
+    </div>
+</div>
+<div class="container">
+
+<div class="padded-content">
+        {% block content %}
+        {% endblock content %}
+</div>
+</div>
+<footer class="footer">
+  <div class="columns">
+<div class="column is-2"><img alt="Dan's Dinnerz Logo" width="150px" src="{% static 'img/logo.png'%}"></div>
+<div class="column is-3"><h3><strong>Dan's Dinnerz</strong> by <a href="https://www.linkedin.com/in/dan-l-9bb90621b/">Dan</a>.</h3></div>
+<div class="column is-5"><h2>Like what you see? Want to talk to the master himself?</h2>
+    <p>Get in touch by email with the address <a href="mailto:d.liles3266@student.leedsbeckett.ac.uk">d.liles3266@student.leedsbeckett.ac.uk</a> or via <a href="https://www.linkedin.com/in/dan-l-9bb90621b/">LinkedIn</a>.</p></div>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>

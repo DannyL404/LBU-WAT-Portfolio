@@ -1,0 +1,12 @@
+<title>Contact Dan</title>
+{% extends 'recipies/base.html' %}
+{% block content %}
+    <h1>Contact Dan</h1><br><br>
+    <h2>Like what you see? Want to talk to the master himself?</h2>
+    <p>Get in touch by email with the address <a href="mailto:d.liles3266@student.leedsbeckett.ac.uk">d.liles3266@student.leedsbeckett.ac.uk</a> or via <a href="https://www.linkedin.com/in/dan-l-9bb90621b/">LinkedIn</a>.</p>
+    <form method="post">
+    {% csrf_token %}
+    {{ ContactForm.as_p }}
+    <button type="submit">Submit</button>
+    </form>
+{% endblock content%}

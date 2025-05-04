@@ -1,0 +1,37 @@
+<title>About Dan</title>
+{% extends 'recipies/base.html' %}
+{% load static %}
+{% block content %}
+    <h1>About Dan</h1><br><br>
+    <p>I am a second year Cyber Security Student at Leeds Beckett University who enjoys to cook as a hobby off the screen.<br>
+        I love making meals with rogue food pairings and experimental cooking techniques. <br>
+        I also have a passion for live music, regularly attending concerts and festivals. <br>
+        Finally, I love the great outdoors, partaking in many outdoor adventures and side quests. <br><br>
+        See the images below to gain an exclusive insight into my life. </p>
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <img src="{% static 'img/Image1.jpeg' %}" class="gallery__img" alt="Snow on Tables during a hike in January 2025.">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="{% static 'img/Image2.jpeg' %}" class="gallery__img" alt="Pretty lake during a walk at Roundhay Park last May.">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="{% static 'img/Image3.jpeg' %}" class="gallery__img" alt="The ocean from a kayak adventure I went on in September 2024.">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+                <img src="{% static 'img/Image4.jpeg' %}" class="gallery__img" alt="A flare during the Courteeners at Boardmasters 2024.">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img src="{% static 'img/Image5.jpeg' %}" class="gallery__img" alt="In the crowd for Antony Szmierek!">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="{% static 'img/Image6.jpeg' %}" class="gallery__img" alt="In the crowd at a festival in 2024.">
+            </figure>
+            <figure class="gallery__item gallery__item--7">
+                <img src="{% static 'img/Image7.jpeg' %}" class="gallery__img" alt="Dua Lipa at Opener Festival 2024">
+            </figure>
+            <figure class="gallery__item gallery__item--8">
+                <img src="{% static 'img/Image8.jpeg' %}" class="gallery__img" alt="Example at O2 Academy Leeds 2024">
+            </figure>
+        </div>
+{% endblock content%}
